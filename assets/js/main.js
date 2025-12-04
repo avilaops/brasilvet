@@ -348,14 +348,16 @@ function initVideoModal() {
     const playButtons = document.querySelectorAll('.play-button');
     const videoModal = document.getElementById('videoModal');
     const closeModal = document.getElementById('videoModalClose');
-    const iframe = document.getElementById('videoModalIframe');
+    const videoPlayer = document.getElementById('videoModalPlayer');
 
     playButtons.forEach(button => {
         button.addEventListener('click', () => {
             const videoId = button.getAttribute('data-video');
             const videoUrl = getVideoUrl(videoId);
 
-            iframe.src = videoUrl;
+            videoPlayer.querySelector('source').src = videoUrl;
+            videoPlayer.load();
+            videoPlayer.play();
             videoModal.classList.add('active');
             document.body.style.overflow = 'hidden';
         });
@@ -378,22 +380,19 @@ function initVideoModal() {
 
 function closeVideoModal() {
     const videoModal = document.getElementById('videoModal');
-    const iframe = document.getElementById('videoModalIframe');
+    const videoPlayer = document.getElementById('videoModalPlayer');
 
     videoModal.classList.remove('active');
-    iframe.src = '';
+    videoPlayer.pause();
+    videoPlayer.currentTime = 0;
+    videoPlayer.querySelector('source').src = '';
     document.body.style.overflow = '';
 }
 
 function getVideoUrl(videoId) {
-    // Mapeia IDs dos vídeos (substituir com URLs reais)
-    const videos = {
-        'marcelo': 'https://www.youtube.com/embed/VIDEO_ID_MARCELO?autoplay=1',
-        'ana': 'https://www.youtube.com/embed/VIDEO_ID_ANA?autoplay=1',
-        'jose': 'https://www.youtube.com/embed/VIDEO_ID_JOSE?autoplay=1'
-    };
-
-    return videos[videoId] || '';
+    // Todos os depoimentos usam o mesmo vídeo local por enquanto
+    // Pode adicionar vídeos específicos depois
+    return 'assets/videos/hero-rebanho.mp4';
 }
 
 // ==================== FORM VALIDATIONS ====================
