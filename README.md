@@ -1,6 +1,6 @@
 # 🐮 Brasilvet - Suplementos Veterinários
 
-[![Website](https://img.shields.io/badge/Website-Online-success)](https://avilaops.github.io/brasilvet/)
+[![Website](https://img.shields.io/badge/Website-Online-success)](https://brasilvet.avilaops.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Made with](https://img.shields.io/badge/Made%20with-HTML%2FCSS%2FJS-orange)](https://github.com/avilaops/brasilvet)
 
@@ -15,7 +15,7 @@ Oferecemos soluções completas em nutrição animal para:
 
 ## 🚀 Demonstração
 
-**🔗 Site ao vivo:** [avilaops.github.io/brasilvet](https://avilaops.github.io/brasilvet/)
+**🔗 Site ao vivo:** [brasilvet.avilaops.com](https://brasilvet.avilaops.com)
 
 ![Brasilvet Preview](assets/images/og-image.svg)
 

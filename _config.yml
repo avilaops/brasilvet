@@ -9,7 +9,7 @@ description: Suplementos veterinários de alta qualidade para bovinos, equinos e
 
 # URL base
 baseurl: ""
-url: "https://avilaops.github.io/brasilvet"
+url: "https://brasilvet.avilaops.com"
 
 # Tema (não usado, mas deixamos configurado)
 theme: null
@@ -19,18 +19,18 @@ plugins: []
 
 # Exclude files
 exclude:
-  - README.md
-  - .gitignore
-  - TEMP
-  - TODO
-  - plan.md
-  - _temp.md
+- README.md
+- .gitignore
+- TEMP
+- TODO
+- plan.md
+- _temp.md
 
 # Include files
 include:
-  - .htaccess
-  - _pages
-  - assets
+- .htaccess
+- _pages
+- assets
 
 # Markdown settings
 markdown: kramdown
