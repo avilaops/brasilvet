@@ -357,9 +357,9 @@ function initVideoModal() {
 
             videoPlayer.querySelector('source').src = videoUrl;
             videoPlayer.load();
-            videoPlayer.play();
             videoModal.classList.add('active');
             document.body.style.overflow = 'hidden';
+            // Vídeo inicia automaticamente com autoplay
         });
     });
 
@@ -383,9 +383,8 @@ function closeVideoModal() {
     const videoPlayer = document.getElementById('videoModalPlayer');
 
     videoModal.classList.remove('active');
-    videoPlayer.pause();
-    videoPlayer.currentTime = 0;
     videoPlayer.querySelector('source').src = '';
+    videoPlayer.load();
     document.body.style.overflow = '';
 }
 
