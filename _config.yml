@@ -1,0 +1,39 @@
+# Configuração GitHub Pages - Brasilvet
+# Este arquivo define como o GitHub Pages irá servir o site
+
+# Nome do site
+name: Brasilvet - Suplementos Veterinários
+
+# Descrição
+description: Suplementos veterinários de alta qualidade para bovinos, equinos e pets. 28 anos de tradição.
+
+# URL base
+baseurl: ""
+url: "https://avilaops.github.io/brasilvet"
+
+# Tema (não usado, mas deixamos configurado)
+theme: null
+
+# Plugins
+plugins: []
+
+# Exclude files
+exclude:
+  - README.md
+  - .gitignore
+  - TEMP
+  - TODO
+  - plan.md
+  - _temp.md
+
+# Include files
+include:
+  - .htaccess
+  - _pages
+  - assets
+
+# Markdown settings
+markdown: kramdown
+
+# Permalink style
+permalink: pretty
