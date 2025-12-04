@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D5016;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B4423;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)" stroke="#F4A900" stroke-width="2"/>
+
+  <!-- Bull head simplified -->
+  <g fill="#F4A900">
+    <!-- Horns -->
+    <path d="M 30,35 Q 25,25 20,30 Q 18,32 22,35 L 30,40 Z"/>
+    <path d="M 70,35 Q 75,25 80,30 Q 82,32 78,35 L 70,40 Z"/>
+
+    <!-- Head -->
+    <ellipse cx="50" cy="50" rx="18" ry="20" fill="#F4A900"/>
+
+    <!-- Ears -->
+    <ellipse cx="35" cy="45" rx="6" ry="8" fill="#6B4423"/>
+    <ellipse cx="65" cy="45" rx="6" ry="8" fill="#6B4423"/>
+
+    <!-- Eyes -->
+    <circle cx="43" cy="48" r="2.5" fill="#2D5016"/>
+    <circle cx="57" cy="48" r="2.5" fill="#2D5016"/>
+
+    <!-- Nose -->
+    <ellipse cx="50" cy="58" rx="8" ry="6" fill="#6B4423"/>
+    <circle cx="47" cy="57" r="1.5" fill="#2D5016"/>
+    <circle cx="53" cy="57" r="1.5" fill="#2D5016"/>
+  </g>
+
+  <!-- Letter B -->
+  <text x="50" y="82" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#F4A900" text-anchor="middle">B</text>
+</svg>
